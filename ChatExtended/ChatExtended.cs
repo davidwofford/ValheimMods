@@ -13,6 +13,7 @@ namespace ChatExtended
         private static ConfigEntry<bool> modEnabled;
         private static ConfigEntry<float> chatTimeout;
         private static ConfigEntry<bool> showChatOnShout;
+        private static ConfigEntry<int> nexusId;
 
         public static void Dbgl(string str = "", bool pref = true)
         {
@@ -25,6 +26,8 @@ namespace ChatExtended
             modEnabled = Config.Bind<bool>("General", "Enabled", true, "Enable this mod");
             chatTimeout = Config.Bind<float>("General", "ChatTimeout", 10.00f, "chat timeout in seconds");
             showChatOnShout = Config.Bind<bool>("General", "ShowChatOnShout", true, "show the chat window when someone shouts");
+            nexusId = Config.Bind<int>("General", "NexusID", 480, "Nexus mod ID for updates");
+            nexusId.Value = 480;
             Config.Save();
 
             if (!modEnabled.Value)
