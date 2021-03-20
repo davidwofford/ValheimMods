@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatExtended", "ChatExtended\ChatExtended.csproj", "{E886F028-40BE-4558-A2B6-25647C1CBD08}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C20D13EB-6DE0-41D0-9B0C-E2304F58CA7C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeadBaseIconFix", "MeadBaseIconFix\MeadBaseIconFix.csproj", "{98C0DD9C-6DAF-4A20-95E2-2C0B4D8E31A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{E886F028-40BE-4558-A2B6-25647C1CBD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E886F028-40BE-4558-A2B6-25647C1CBD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E886F028-40BE-4558-A2B6-25647C1CBD08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C0DD9C-6DAF-4A20-95E2-2C0B4D8E31A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C0DD9C-6DAF-4A20-95E2-2C0B4D8E31A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C0DD9C-6DAF-4A20-95E2-2C0B4D8E31A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C0DD9C-6DAF-4A20-95E2-2C0B4D8E31A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
