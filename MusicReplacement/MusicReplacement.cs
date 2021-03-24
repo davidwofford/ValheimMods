@@ -28,7 +28,7 @@ namespace MusicReplacement
             context = this;
             modEnabled = Config.Bind<bool>("General", "Enabled", true, "Enable this mod");
             nexusId = Config.Bind<int>("General", "NexusID", 480, "Nexus mod ID for updates");
-            nexusId.Value = 480;
+            nexusId.Value = 712;
             Config.Save();
 
             if (!modEnabled.Value)
