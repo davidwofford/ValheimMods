@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace MeadBaseIconFix
 {
-    [BepInPlugin("org.davidwofford.plugins.meadbaseiconfix", "Mead Base Icon Fix", "1.0.0.0")]
+    [BepInPlugin("org.davidwofford.plugins.meadbaseiconfix", "Mead Base Icon Fix", "1.0.1.0")]
     public class MeadBaseIconFix : BaseUnityPlugin
     {
         private static ConfigEntry<bool> modEnabled;
@@ -22,7 +22,7 @@ namespace MeadBaseIconFix
         {
             modEnabled = Config.Bind<bool>("General", "Enabled", true, "Enable this mod");
             nexusId = Config.Bind<int>("General", "NexusID", 480, "Nexus mod ID for updates");
-            nexusId.Value = 480;
+            nexusId.Value = 710;
             Config.Save();
 
             if (!modEnabled.Value)
