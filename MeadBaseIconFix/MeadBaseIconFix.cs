@@ -41,16 +41,27 @@ namespace MeadBaseIconFix
                 var assetBundle = LoadAssetBundle("meadbaseiconfix");
 
                 if (assetBundle != null) {
-                    var items = ObjectDB.instance.GetAllItems(ItemDrop.ItemData.ItemType.Material, "Mead");
+                    var meads = ObjectDB.instance.GetAllItems(ItemDrop.ItemData.ItemType.Material, "MeadBase");
+                    // There is currently only one BarleyWineBase item in the game, and it's for fire resist
+                    var wines = ObjectDB.instance.GetAllItems(ItemDrop.ItemData.ItemType.Material, "BarleyWineBase");
 
-                    foreach (ItemDrop item in items)
+                    foreach (ItemDrop mead in meads)
                     {
-                        var sprite = assetBundle.LoadAsset<Sprite>(item.name);
+                        var sprite = assetBundle.LoadAsset<Sprite>(mead.name);
 
                         if (sprite != null) {
-                            item.m_itemData.m_shared.m_icons[item.m_itemData.m_variant] = sprite;
+                            mead.m_itemData.m_shared.m_icons[mead.m_itemData.m_variant] = sprite;
                         }
                     }
+
+                    var wineSprite = assetBundle.LoadAsset<Sprite>("MeadBaseFireResist");
+                    if (wineSprite != null) {
+                        foreach (ItemDrop wine in wines)
+                        {
+                            wine.m_itemData.m_shared.m_icons[wine.m_itemData.m_variant] = wineSprite;
+                        }
+                    }
+                    
 
                     assetBundle.Unload(false);
                 }

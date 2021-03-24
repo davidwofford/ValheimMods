@@ -1,0 +1,36 @@
+﻿categories:
+  respawn:
+  intro:
+    - Entering Valheim
+  menu:
+    - MenuMusic
+  combat:
+    - ForestIsMovingLv5
+  CombatEventL1:
+    - ForestIsMovingLv1
+  CombatEventL2:
+    - ForestIsMovingLv2
+  CombatEventL3:
+    - ForestIsMovingLv3
+  CombatEventL4:
+    - ForestIsMovingLv4
+  boss_eikthyr:
+    - Battle 1 - Eikthyr
+  boss_gdking:
+    - Battle 2 - Elder
+  boss_bonemass:
+    - Boss 3 Bonemass
+  boss_moder:
+    - Boss 4 Mother
+  boss_goblinking:
+    - Boss 5 Yagluth
+  morning:
+    - Dawn
+  evening:
+    - Dusk
+  sailing:
+    - Sailing4
+  blackforest:
+    - Black Forest(day)
+  meadows:
+    - Meadows(day)
